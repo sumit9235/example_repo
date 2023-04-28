@@ -1,6 +1,10 @@
-on : push
-jobs : 
-     first-job:
-        runs-on : ubuntu-latest
-        steps : 
-             -run : node --version
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node --version
